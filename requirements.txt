@@ -1,0 +1,8 @@
+flask
+mongoengine
+flask_wtf
+flask_mongoengine
+flask_login
+Faker
+flask-paginate
+flask_toastr

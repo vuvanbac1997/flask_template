@@ -1,0 +1,19 @@
+<div class="page-breadcrumb">
+    <div class="row">
+        <div class="col-12 d-flex no-block align-items-center">
+{#            <h4 class="page-title">Dashboard</h4>#}
+{#            <div class="ml-auto text-right">#}
+            <div class="text-right">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        {%- for breadcrumb in breadcrumbs -%}
+                            <li class="breadcrumb-item">
+                                <a href="{{ breadcrumb.url }}">{{ breadcrumb.text }}</a>
+                            </li>
+                        {%- endfor -%}
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

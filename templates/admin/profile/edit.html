@@ -1,0 +1,103 @@
+{% extends "admin/index.html" %}
+{% block style %}
+{% endblock %}
+{% block script %}
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .height(300);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+{% endblock %}
+{% block content %}
+    <form class="form-horizontal" action="/admin/user/update" method="post" enctype="multipart/form-data">
+        <div class="row bg-white">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+            <div class="col-md-5">
+                <div class="row mt-3 mb-3" style="display: flex; justify-content: center;">
+                    <div class="col-md-12">
+                        <img id="blah" class="img-fluid" src="{{ user.image if user else  url_for("static", filename="image/noimage.png")}}" alt="your image" />
+                    </div>
+                </div>
+                <div class="row text-center" style="display: flex; justify-content: center;">
+                    <input id="file-upload" name="file_image" type='file' class="btn btn-link" onchange="readURL(this);" hidden/>
+                    <label for="file-upload" class="btn btn-link">
+                        Choose Image
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <input type="text" name="id" class="form-control" value="{{ user.id if user else ""}}" hidden>
+                            <label for="fname" class="col-sm-3 text-right control-label col-form-label">Username</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="uname" class="form-control" value="{{ user.username if user else ""}}" id="fname" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lname" class="col-sm-3 text-right control-label col-form-label">Password</label>
+                            <div class="col-sm-9">
+                                <input type="password" name="pwd" class="form-control" value="{{ user.password if user else ""}}" id="lname" placeholder="Password" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email1" class="col-sm-3 text-right control-label col-form-label">Email</label>
+                            <div class="col-sm-9">
+                                <input type="email" name="email" class="form-control" value="{{ user.email if user else ""}}" id="email1" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="cono1" class="col-sm-3 text-right control-label col-form-label">Contact No</label>
+                            <div class="col-sm-9">
+                                <input type="text"  name="contact" class="form-control" value="{{ user.contact if user else ""}}" id="cono1" placeholder="Contact No Here">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="cono1" class="col-sm-3 text-right control-label col-form-label">Address</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" name="address" placeholder="Address">{{ user.address if user else ""}}</textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row bg-white">
+            <div class="card-body text-center">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for message in messages %}
+                {% if "Error" not in message[1] %}
+                    <div class="alert alert-info">
+                        <strong>Success! </strong> {{ message[1] }}</div>
+                {% endif %}
+
+                {% if "Error" in message[1] %}
+                    <div class="alert alert-warning">
+                        {{ message[1] }}</div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+{% endblock %}

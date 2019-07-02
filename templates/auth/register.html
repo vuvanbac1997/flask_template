@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login form</title>
+    {% include 'web/layout/script.html' %}
+    {% include 'web/layout/style.html' %}
+</head>
+<body>
+<div class="container">
+    <div class="col-md-6 offset-3">
+        <h1 class="text-center">Register</h1>
+        <a href="/login">If you had an account!</a>
+        <form method=post role="form">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+            <div class="form-group">
+                {{ form.username.label }}
+                {{ form.username(class="form-control is-invalid" if form.username.errors else "form-control") }}
+                <div class="invalid-feedback">
+                    {% for error in form.username.errors %}
+                        {{ error }}
+                        <br>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="form-group">
+                {{ form.password.label }}
+                {{ form.password(class="form-control is-invalid" if form.password.errors else "form-control") }}
+                <div class="invalid-feedback">
+                    {% for error in form.password.errors %}
+                        {{ error }}
+                        <br>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="form-group">
+                {{ form.confirm.label }}
+                {{ form.confirm(class="form-control is-invalid" if form.confirm.errors else "form-control") }}
+                <div class="invalid-feedback">
+                    {% for error in form.confirm.errors %}
+                        {{ error }}
+                        <br>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="form-group">
+                {{ form.accept_tos }}
+                {{ form.accept_tos.label }}
+                <div class="invalid-feedback">
+                    {% for error in form.accept_tos.errors %}
+                        {{ error }}
+                        <br>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+
+                {% for message in messages %}
+                    {% if "Error" not in message[1] %}
+                        <div class="alert alert-info">
+                            <strong>Success! </strong> {{ message[1] }}</div>
+                    {% endif %}
+
+                    {% if "Error" in message[1] %}
+                        <div class="alert alert-warning">
+                            {{ message[1] }}</div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+</div>
+</body>
+</html>
