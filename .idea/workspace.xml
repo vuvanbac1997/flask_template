@@ -5,30 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62e79697-9ce6-4e3d-a6ec-1813e631c3d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/auth/layout/script.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/auth/layout/style.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/gen_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen/gen_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen/gen_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen/gen_route.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen/gen_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen/gen_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/catalog.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/catalog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/post.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin/catalog.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/catalog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/post.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/catalog/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/catalog/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/catalog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/catalog/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/layout/left-sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/layout/left-sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/post/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/post/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/product/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/product/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/product/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/user/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/user/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/user/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/auth/_formhelpers.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +20,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/flask_example$flask_example.coverage" NAME="flask_example Coverage Results" MODIFIED="1561784288850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_example$gen_route.coverage" NAME="gen_route Coverage Results" MODIFIED="1562146299814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gen" />
-    <SUITE FILE_PATH="coverage/flask_example$gen_view.coverage" NAME="gen_view Coverage Results" MODIFIED="1562153176627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gen" />
+    <SUITE FILE_PATH="coverage/flask_example$gen_view.coverage" NAME="gen_view Coverage Results" MODIFIED="1562153393673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gen" />
+    <SUITE FILE_PATH="coverage/flask_example$gen_route.coverage" NAME="gen_route Coverage Results" MODIFIED="1562156768023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gen" />
     <SUITE FILE_PATH="coverage/flask_example$dummy.coverage" NAME="dummy Coverage Results" MODIFIED="1561864165347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dump" />
     <SUITE FILE_PATH="coverage/flask_example$generate.coverage" NAME="generate Coverage Results" MODIFIED="1561961315820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gen" />
     <SUITE FILE_PATH="coverage/flask_example$gen_model.coverage" NAME="gen_model Coverage Results" MODIFIED="1562087026941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gen" />
@@ -63,10 +45,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen/gen_view.py">
+        <entry file="file://$PROJECT_DIR$/templates/admin/layout/left-sidebar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="70" column="129" selection-start-line="70" selection-start-column="122" selection-end-line="70" selection-end-column="129" />
+            <state relative-caret-position="170">
+              <caret line="10" column="8" lean-forward="true" selection-end-line="10" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen/gen_route.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="121" column="31" selection-start-line="9" selection-start-column="12" selection-end-line="121" selection-end-column="31" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -74,32 +65,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/admin/catalog.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#70#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin/catalog/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/admin/catalog/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="102">
+                <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -107,11 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -130,8 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>register_blueprints</find>
-      <find>auth_api</find>
       <find>register_auth</find>
       <find>MongoEngine</find>
       <find>profile_page</find>
@@ -160,6 +128,8 @@
       <find>update</find>
       <find>post</find>
       <find>url_for</find>
+      <find>Back</find>
+      <find>aaa</find>
     </findStrings>
     <replaceStrings>
       <replace>auth</replace>
@@ -178,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/templates/admin/profile/profile_page.html" />
         <option value="$PROJECT_DIR$/routes/admin.py" />
         <option value="$PROJECT_DIR$/templates/admin/profile/edit.html" />
@@ -221,14 +190,15 @@
         <option value="$PROJECT_DIR$/routes/admin/product.py" />
         <option value="$PROJECT_DIR$/templates/admin/user/index.html" />
         <option value="$PROJECT_DIR$/templates/admin/user/edit.html" />
-        <option value="$PROJECT_DIR$/gen/gen_route.py" />
         <option value="$PROJECT_DIR$/templates/admin/post/edit.html" />
-        <option value="$PROJECT_DIR$/templates/admin/layout/left-sidebar.html" />
-        <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/routes/admin/catalog.py" />
-        <option value="$PROJECT_DIR$/gen/gen_view.py" />
         <option value="$PROJECT_DIR$/templates/admin/catalog/index.html" />
         <option value="$PROJECT_DIR$/templates/admin/catalog/edit.html" />
+        <option value="$PROJECT_DIR$/gen/gen_view.py" />
+        <option value="$PROJECT_DIR$/templates/admin/layout/left-sidebar.html" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/gen/gen_route.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -249,45 +219,6 @@
             <path>
               <item name="flask_example" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask_example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_example" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_example" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_example" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_example" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_example" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_example" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_example" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gen_view">
+  <component name="RunManager" selected="Python.gen_route">
     <configuration name="dummy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="flask_example" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -490,8 +421,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.gen_view" />
         <item itemvalue="Python.gen_route" />
+        <item itemvalue="Python.gen_view" />
         <item itemvalue="Python.gen_model" />
         <item itemvalue="Python.generate" />
         <item itemvalue="Python.dummy" />
@@ -522,12 +453,12 @@
       <workItem from="1562078334253" duration="881000" />
       <workItem from="1562083659464" duration="5041000" />
       <workItem from="1562132378652" duration="751000" />
-      <workItem from="1562141918559" duration="9643000" />
+      <workItem from="1562141918559" duration="14270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97401000" />
+    <option name="totallyTimeSpent" value="102028000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -556,7 +487,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.36497545" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.15384616" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21276596" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -569,17 +500,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="41" />
-          <folding>
-            <element signature="e#5866#5873#1#HTML" expanded="true" />
-            <element signature="e#7036#7043#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/web/layout/style.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -668,13 +588,6 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1715469570/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="2984" column="8" selection-start-line="2984" selection-start-column="8" selection-end-line="2984" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -850,16 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen/gen_route.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="130" column="48" selection-start-line="130" selection-start-column="42" selection-end-line="130" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/typing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="987">
@@ -871,33 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/layout/left-sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="117" selection-start-line="6" selection-start-column="105" selection-end-line="6" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/gen_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="70" column="129" selection-start-line="70" selection-start-column="122" selection-end-line="70" selection-end-column="129" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -914,14 +790,65 @@
     <entry file="file://$PROJECT_DIR$/templates/admin/catalog/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+          <caret line="58" column="6" lean-forward="true" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/catalog/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
+          <caret line="8" column="105" lean-forward="true" selection-start-line="8" selection-start-column="105" selection-end-line="8" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/gen_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="62" column="29" lean-forward="true" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/layout/left-sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" lean-forward="true" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1715469570/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="4984" column="8" selection-start-line="4984" selection-start-column="8" selection-end-line="4984" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/gen_route.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="121" column="31" selection-start-line="9" selection-start-column="12" selection-end-line="121" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="102">
+            <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

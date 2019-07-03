@@ -10,9 +10,9 @@ from routes.admin.admin import admin
 from routes.admin.post import admin_post
 from routes.admin.catalog import admin_catalog
 from routes.admin.product import admin_product
-# insert_route
+# start_route
 
-
+# end_route
 from logging.handlers import RotatingFileHandler
 import logging
 import os

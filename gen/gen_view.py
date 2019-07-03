@@ -68,7 +68,7 @@ def gen_view():
     register_file = os.path.join(register_path, 'left-sidebar.html')
     sidebar_file = open(register_file, "w")
     sidebar_file.write('<aside class="left-sidebar" data-sidebarbg="skin5">\n<div class="scroll-sidebar">\n<nav class="sidebar-nav">\n<ul id="sidebarnav" class="p-t-30">')
-    sidebar_file.write('\n<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url_for("Admin'+r.title()+'.'+r+'_index") }}" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Post</span></a></li>\n<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url_for("Admin.user_index") }}" aria-expanded="false"><i class="mdi mdi-account"></i><span class="hide-menu">User</span></a></li>')
+    sidebar_file.write('\n<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url_for("AdminPost.post_index") }}" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Post</span></a></li>\n<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url_for("Admin.user_index") }}" aria-expanded="false"><i class="mdi mdi-account"></i><span class="hide-menu">User</span></a></li>')
     with open('data.json') as json_file:
         data = json.load(json_file)
         for r in data:

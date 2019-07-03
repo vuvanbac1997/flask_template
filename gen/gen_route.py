@@ -7,8 +7,6 @@ def gen_route():
         data = json.load(json_file)
         for r in data:
             print(r)
-
-
             route_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'routes/admin'))
             models_complete = os.path.join(route_path, r + '.py')
             models_file = open(models_complete, "w")
@@ -123,14 +121,30 @@ def gen_route():
 
             models_file.close()
 
-            # register_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-            # register_file = os.path.join(register_path, '__init__.py')
-            # file = open(register_file, "r")
-            # insert_blueprint = "insert_blueprint"
-            # insert_route = "insert_route"
-            # with open(register_file) as myFile:
-            #     for num, line in enumerate(myFile, 1):
-            #         if insert_route in line:
-            #             print('found at line:', num)
+    # register_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+    # register_file = os.path.join(register_path, '__init__.py')
+    #
+    # start_route = "start_route"
+    # end_route = "end_route"
+    # start_index = 0
+    # end_index = 0
+    #
+    # with open(register_file) as myFile:
+    #     for num, line in enumerate(myFile, 1):
+    #         if start_route in line:
+    #             start_index = num
+    #             print('found at line:', num)
+    #         if end_route in line:
+    #             end_index = num
+
+    # f = open(register_file, "r+")
+    # contents = f.readlines()
+    # f.close()
+    # contents.insert(start_index, "cu cai")
+    # f = open(register_file, "w")
+    # contents = "".join(contents)
+    # f.write(contents)
+    # f.close()
+
 
 gen_route()
