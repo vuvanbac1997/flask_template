@@ -58,16 +58,18 @@ def user_update():
     pwd = request.values.get("pwd")
     email = request.values.get("email")
     contact = request.values.get("contact")
+    role = request.values.get("role")
+    date = request.values.get("date")
     address = request.values.get("address")
     image = request.files["file_image"]
     image_string = base64.b64encode(image.read())
     image_string = "data:image/jpeg;base64," + str(image_string, 'utf-8')
 
     if image:
-        user = User(id=id).update(username=usname, email=email, contact=contact, address=address, image=image_string)
+        user = User(id=id).update(username=usname, email=email, role=role, date_birth=date, contact=contact, address=address, image=image_string)
     else:
-        user = User(id=id).update(username=usname, email=email, contact=contact, address=address)
-    flash('Success')
+        user = User(id=id).update(username=usname, email=email, role=role, date_birth=date, contact=contact, address=address)
+    flash("Success", 'success')
 
     return redirect("/admin/user/edit/" + id)
 
@@ -91,7 +93,7 @@ def user_create():
     else:
         user = User(username=usname, password=pwd, email=email, contact=contact, address=address).save()
         user_id = str(user.id)
-    flash('Success')
+    flash("Success", 'success')
     return redirect("/admin/user/edit/" + user_id)
 
 

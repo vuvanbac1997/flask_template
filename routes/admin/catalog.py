@@ -17,7 +17,7 @@ def catalog_index():
 	page, per_page, offset = get_page_args(page_parameter='page', per_page_parameter='per_page')
 	if search:
 		regex = re.compile('.*'+q+'.*')
-		catalog = Catalog.objects(is_active=True).skip(offset).limit(per_page)
+		catalog = Catalog.objects(name = q,active=True).skip(offset).limit(per_page)
 	else:
 		catalog = Catalog.objects(active=True).skip(offset).limit(per_page)
 	pagination = Pagination(page=page, total=catalog.count(), record_name='catalogs', css_framework='bootstrap4')
@@ -26,20 +26,39 @@ def catalog_index():
 @admin_catalog.route('/edit/<catalog_id>', methods = ['GET'])
 @login_required
 def catalog_edit(catalog_id):
-	return '1'
+	if catalog_id != '0':
+		catalog = Catalog.objects.get(id=catalog_id)
+		return render_template('admin/catalog/edit.html', catalog=catalog)
+	else:
+		return render_template('admin/catalog/edit.html')
 
 @admin_catalog.route('/create', methods = ['POST'])
 @login_required
 def catalog_create():
-	return '1'
+	name = request.values.get('name')
+	catalog = Catalog(name = name).save()
+	id = str(catalog.id)
+	if id:
+		flash('Success', 'success')
+	else:
+		flash('Error', 'error')
+	return redirect('/admin/catalog/edit/' + id)
 
 @admin_catalog.route('/update', methods = ['POST'])
 @login_required
 def catalog_update():
-	return '1'
+	id = request.values.get('id')
+	name = request.values.get('name')
+	catalog = Catalog(id=id).update(name = name)
+	if catalog:
+		flash('Update Success', 'success')
+	else:
+		flash('Error', 'error')
+	return redirect('/admin/catalog/edit/' + id)
 
 @admin_catalog.route('/delete/<catalog_id>', methods = ['GET'])
 @login_required
 def catalog_delete(catalog_id):
-	return '1'
+	Catalog(id=catalog_id).update(active=False)
+	return redirect('/admin/catalog')
 

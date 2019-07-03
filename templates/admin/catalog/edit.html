@@ -1,1 +1,36 @@
-Edit page: Catalog
+{% extends "admin/index.html" %}
+{% block style %}{% endblock %}
+{% block script %}
+{% endblock %}
+{% block content %}
+{{ toastr.message() }}
+<h4 class="card-title d-flex justify-content-between align-items-center">
+Catalog
+<a href="{{ url_for("AdminCatalog.catalog_index") }}"><button class="btn btn-secondary">Back</button></a>
+</h4>
+<div class="row">
+<div class="col-12">
+<div class="card">
+<div class="card-body">
+<form id="identifier" class="form-group" action="{{"/admin/catalog/update" if catalog else "/admin/catalog/create" }}" method="post">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+<input type="text" name="id" class="form-control" value="{{ catalog.id if catalog else ""}}" hidden>
+<div class="form-group row">
+<label for="lname" class="col-sm-3 text-right control-label col-form-label">Name</label>
+<div class="col-sm-9">
+<input type="text" name="name" class="form-control" value="{{ catalog.name if catalog else ""}}" id="lname" placeholder="Name">
+</div>
+</div>
+<div class="row bg-white">
+<div class="card-body text-center">
+<div class="form-group">
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

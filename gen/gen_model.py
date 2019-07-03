@@ -14,12 +14,15 @@ def gen_model():
             models_complete = os.path.join(models_path, r + '.py')
             models_file = open(models_complete, "w")
 
-            models_file.write("from mongoengine import Document, ")
+            models_file.write("from datetime import datetime")
+            models_file.write("\nfrom mongoengine import Document, ")
             libraries = []
             for key, value in data.get(r).items():
                 libraries.append(value)
                 print('\t' + key + ': ' + value)
 
+            libraries.append("BooleanField")
+            libraries.append("DateField")
             libraries = list(set(libraries))
             for l in libraries:
                 models_file.write(l)
@@ -34,5 +37,8 @@ def gen_model():
             for key, value in data.get(r).items():
                 models_file.write("\t" + key + " = " + value + "()")
                 models_file.write("\n")
-
+            models_file.write("\n\tactive = BooleanField(default=True)")
+            models_file.write("\n\tcreate_date = DateField(default=datetime.now())")
             models_file.close()
+
+gen_model()

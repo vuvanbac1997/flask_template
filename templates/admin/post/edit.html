@@ -1,7 +1,6 @@
 {% extends "admin/index.html" %}
 {% block style %}
     <link rel="stylesheet" type="text/css" href="../../../static/matrix/assets/libs/quill/dist/quill.snow.css">
-
 {% endblock %}
 {% block script %}
     <script src="../../../static/matrix/assets/libs/quill/dist/quill.min.js"></script>
@@ -48,7 +47,6 @@
                 <div class="card-body">
                     <form id="identifier" class="form-group" action="{{'/admin/post/update' if post else '/admin/post/create' }}" method="post" enctype="multipart/form-data">
                         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
-
                         <div class="form-group row">
                             <input type="text" name="id" class="form-control" value="{{ post.id if post else ""}}" hidden>
                             <label for="fname" class="col-sm-2 text-right control-label col-form-label">Title</label>

@@ -1,4 +1,5 @@
-from mongoengine import Document, StringField, FloatField, IntField, ListField
+from datetime import datetime
+from mongoengine import Document, DateField, IntField, ListField, BooleanField, StringField, FloatField
 class Product(Document):
 	meta = {'collection': 'product'}
 	catalog_id = StringField()
@@ -8,3 +9,6 @@ class Product(Document):
 	image_link = StringField()
 	image_list = ListField()
 	view = IntField()
+
+	active = BooleanField(default=True)
+	create_date = DateField(default=datetime.now())

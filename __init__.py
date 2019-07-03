@@ -9,6 +9,7 @@ from routes.auth import auth
 from routes.admin.admin import admin
 from routes.admin.post import admin_post
 from routes.admin.catalog import admin_catalog
+from routes.admin.product import admin_product
 # insert_route
 
 
@@ -39,6 +40,7 @@ def register_blueprints(app):
     app.register_blueprint(admin)
     app.register_blueprint(admin_post)
     app.register_blueprint(admin_catalog)
+    app.register_blueprint(admin_product)
 #     insert_blueprint
 
 

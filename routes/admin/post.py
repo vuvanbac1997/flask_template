@@ -22,7 +22,7 @@ def post_index():
                                            per_page_parameter='per_page')
     if search:
         regex = re.compile('.*'+q+'.*')
-        post = Post.objects(title=regex, is_active=True).skip(offset).limit(per_page)
+        post = Post.objects(title=regex, active=True).skip(offset).limit(per_page)
     else:
         post = Post.objects(active=True).skip(offset).limit(per_page)
 
@@ -53,7 +53,7 @@ def post_create():
     title = request.values.get('title')
     content = request.values.get('content')
     create_date = datetime.now()
-    post = Post(title=title, content=content, create_date=create_date).save()
+    post = Post(title=title, content=content).save()
     id = str(post.id)
     if id:
         flash("Success", 'success')
